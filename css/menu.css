@@ -125,7 +125,7 @@ h3 {
   z-index: -1;
 }
 .resume .base .profile .photo img {
-  width: 100%;
+  width: 60%;
   border-radius: 50%;
 }
 .resume .base .profile .photo {
@@ -133,12 +133,7 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.resume .base .profile .fa-rocket {
-  font-size: 100px;
-  text-align: center;
-  margin: auto;
-  color: var(--darker-blue);
-}
+
 .resume .base .profile .info {
   text-align: center;
   color: var(--white);
@@ -196,8 +191,8 @@ h3 {
   vertical-align: middle;
 }
 .resume .base .follow .box a {
-  display: inline-block;
-  vertical-align: text-bottom;
+  display: block;
+  margin: 0 auto;
 }
 .resume .base .follow .box a:hover i {
   background: var(--yellow);
@@ -208,7 +203,7 @@ h3 {
   transform: rotate(-45deg) scale(1.5);
 }
 .resume .base .follow .box i {
-  display: inline-block;
+  display: block;
   font-size: 30px;
   background: var(--orange);
   width: 60px;

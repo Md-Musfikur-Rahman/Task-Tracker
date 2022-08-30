@@ -46,12 +46,21 @@
         </div>
 
         <main id="over">
-            <div class="add">
-                <h2>Add Tasks</h2>
-                <i class="onoff fas fa-plus-circle" onclick="on()"></i>
+            <div class="function">
+                <div class="add">
+                    <h2>Add Tasks</h2>
+                    <i class="onoff fas fa-plus-circle" onclick="on()"></i>
+                </div>
+
+                <div class="search">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tasks..">
+
+                </div>
             </div>
 
-            <?php
+            <ul id="myUL">
+
+                <?php
             include './dbconnect.php';
 
             $email = $_SESSION["email"];
@@ -62,25 +71,31 @@
             if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
-                echo '  
+                echo ' <li >  
                 <div class="box">
                 <div class="'.$row["priority"].'">
-                    <h2>Task Name:- '.$row["taskname"].'</h2>
+                    <h2>Task Name:-'.$row["taskname"].'</h2>
+                    <br>
                     <div class="row">
-                        <h4>Strat:'.$row["stime"].'</h4>
-                        <h4>End:'.$row["etime"].'</h4>
+                        <h4>Strat Date: <br> '.$row["stime"].'</h4>
+                        <h4>End Date: <br>'.$row["etime"].'</h4>
                     </div>
+                    <br>
                     <p>Description:</p>
                     <p>'.$row["des"].'</p>
+                    <br>
                     <div class="btn">
                     <a href="edit.php?id='.$row["id"].'"> <input type="button" class="edit"value="Edit"></a>
                     <a href="delete.php?id='.$row["id"].'"><input type="button" class="dele" value="Delete"></a>
             </div>
             </div>
-            </div>';
+            </div></li>';
             }
             } else { echo "0 results";}
         ?>
+
+            </ul>
+
 
             <div class="change">
                 <h2>Change View</h2>
@@ -151,6 +166,27 @@
             document.getElementById("over").style.display = "none";
             document.getElementById("overs").style.display = "block";
 
+        }
+
+
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("h2")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
         }
         </script>
 

@@ -17,48 +17,40 @@
                 <div class="base">
                     <div class="profile">
                         <div class="photo">
-                            <!--<img src="" /> -->
-                            <i class="fas fa-rocket"></i>
+                            <img src="./img/my.jpeg" />
                         </div>
                         <div class="info">
-                            <h1 class="name">Naomi Weatherford</h1>
+                            <h1 class="name">Musfikur Rahman</h1>
                             <h2 class="job">Frontend Web Designer</h2>
                         </div>
                     </div>
                     <div class="about">
-                        <h3>About Me</h3>I'm a web designer for Fiserv, specializing in web design, graphic design, and
-                        UX.
-                        Experienced with the Adobe Creative Suite, responsive design, social media management, and
+                        <h3>About Me</h3>I'm a web designer for Myself, specializing in web design, graphic design, and
+                        UX. Experienced with the Adobe Creative Suite, responsive design, social media management, and
                         prototyping.
                     </div>
                     <div class="contact">
                         <h3>Contact Me</h3>
-                        <div class="call"><a href="tel:123-456-7890"><i
-                                    class="fas fa-phone"></i><span>123-456-7890</span></a></div>
-                        <div class="address"><a href="https://goo.gl/maps/fiTBGT6Vnhy"><i
-                                    class="fas fa-map-marker"></i><span>Provo,
-                                    Utah</span></a>
+                        <div class="call"><a href="https://api.whatsapp.com/send/?phone=8801824817711"><i
+                                    class="fas fa-phone"></i><span>+880 1824817711</span></a></div>
+                        <div class="address"><a href="https://goo.gl/maps/mirpur"><i
+                                    class="fas fa-map-marker"></i><span>Mirpur,
+                                    Dhaka</span></a>
                         </div>
-                        <div class="email"><a href="mailto:astronaomical@gmail.com"><i
-                                    class="fas fa-envelope"></i><span>astronaomical</span></a></div>
-                        <div class="website"><a href="http://astronaomical.com/" target="_blank"> <i
-                                    class="fas fa-home"></i><span>astronaomical.com</span></a></div>
+                        <div class="email"><a href="mailto:mmrmasum67@gmail.com"><i
+                                    class="fas fa-envelope"></i><span>mushfikur</span></a></div>
+                        <div class="website"><a href="#" target="_blank"> <i
+                                    class="fas fa-home"></i><span>mushfikur.com</span></a></div>
                     </div>
                     <div class="follow">
                         <h3>Follow Me</h3>
                         <div class="box">
-                            <a href="https://www.facebook.com/astronaomical/" target="_blank"><i
+                            <a href="https://www.facebook.com/mmrmasum99/" target="_blank"><i
                                     class="fab fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/astronaomical/" target="_blank"><i
+                            <a href="https://www.instagram.com/Md_MusfikurRahman/" target="_blank"><i
                                     class="fab fa-instagram "></i></a>
-                            <a href="https://www.pinterest.com/astronaomical/" target="_blank"><i
-                                    class="fab fa-pinterest"></i></a>
-                            <a href="https://www.linkedin.com/in/naomi-weatherford-758385112/" target="_blank"><i
-                                    class="fab fa-linkedin"></i></a>
-                            <a href="https://codepen.io/astronaomical/" target="_blank"><i
-                                    class="fab fa-codepen"></i></a>
-                            <a href="https://www.behance.net/astronaomical" target="_blank"><i
-                                    class="fab fa-behance"></i></a>
+                            <a href="https://www.github.com/Md-Musfikur-Rahman/" target="_blank"><i
+                                    class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -66,26 +58,22 @@
                     <div class="work">
                         <h3><i class="fa fa-briefcase"></i>Experience</h3>
                         <ul>
-                            <li><span>Technical Consultant -<br>Web Design</span><small>Fiserv</small><small>Apr 2018 -
+                            <li><span>Technical Consultant -<br>Web Design</span><small>Fiserv</small><small>Apr 2021 -
                                     Now</small>
                             </li>
-                            <li><span>Web Designer</span><small>Lynden</small><small>Jan 2018 - Apr 2018</small></li>
-                            <li><span>Intern - Web Design</span><small>Lynden</small><small>Aug 2017 - Dec 2017</small>
+                            <li><span>Web Designer</span><small>Lynden</small><small>Jan 2021 - Apr 2021</small></li>
+                            <li><span>Intern - Web Design</span><small>Lynden</small><small>Aug 2020 - Dec 2020</small>
                             </li>
                         </ul>
                     </div>
                     <div class="edu">
                         <h3><i class="fa fa-graduation-cap"></i>Education</h3>
                         <ul>
-                            <li><span>Bachelor of Science<br>Web Design and
-                                    Development</span><small>BYU-Idaho</small><small>Jan.
-                                    2016 - Apr. 2018</small></li>
-                            <li><span>Computer Science</span><small>Edmonds Community College</small><small>Sept. 2014 -
-                                    Dec.
-                                    2015</small></li>
-                            <li><span>High School</span><small>Henry M. Jackson High School</small><small>Jan. 2013 -
-                                    Jun.
-                                    2015</small></li>
+                            <li><span>Bachelor of Science<br>Web Development</span><small>GUB</small><small>Jan. 2024 -
+                                    Apr. 2020</small></li>
+                            <li><span>Computer Science</span><small>GUB</small><small>Sept. 2024 - Dec. 2020</small>
+                            </li>
+                            <li><span>High School</span><small>MGBHS</small><small>Jan. 2019 - Jun.2017</small></li>
                         </ul>
                     </div>
                     <div class="skills-prog">
@@ -106,11 +94,7 @@
                                     <div class="bar"></div>
                                 </div>
                             </li>
-                            <li data-percent="50"><span>jQuery</span>
-                                <div class="skills-bar">
-                                    <div class="bar"></div>
-                                </div>
-                            </li>
+
                             <li data-percent="40"><span>JSON</span>
                                 <div class="skills-bar">
                                     <div class="bar"></div>
@@ -147,13 +131,13 @@
                                 <svg viewbox="0 0 100 100">
                                     <circle cx="50" cy="50" r="45"></circle>
                                     <circle class="cbar" cx="50" cy="50" r="45"></circle>
-                                </svg><span>InDesign</span><small></small>
+                                </svg><span>Figma</span><small></small>
                             </li>
                             <li data-percent="65">
                                 <svg viewbox="0 0 100 100">
                                     <circle cx="50" cy="50" r="45"></circle>
                                     <circle class="cbar" cx="50" cy="50" r="45"></circle>
-                                </svg><span>Dreamweaver</span><small></small>
+                                </svg><span>Adobe Xd</span><small></small>
                             </li>
                         </ul>
                     </div>
@@ -171,7 +155,6 @@
             </div>
         </main>
         <?php include_once'./footer.php';?>
-
     </body>
 
 </html>
