@@ -1,0 +1,100 @@
+.navi {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #c1d0e9;
+}
+
+.logo {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo a {
+  text-decoration: none;
+  text-align: center;
+  color: #555;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  background-color: transparent;
+}
+.controls .control {
+  padding: 1rem;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  background-color: #454e56;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+.controls .control i {
+  font-size: 1.2rem;
+  color: #b2becd;
+  pointer-events: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.logout a {
+  z-index: 2;
+  padding: 6px 16px;
+  border-radius: 18px;
+  border: 1px solid orange;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.logout a::after {
+  content: "";
+  position: absolute;
+  border-radius: 18px;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -2;
+  background-color: red;
+  transition: all 1s ease-in-out;
+}
+
+.logout a:hover::after {
+  width: 100%;
+}
