@@ -86,28 +86,28 @@
                             </li>
                             <li data-percent="90"><span>CSS3 & SCSS</span>
                                 <div class="skills-bar">
-                                    <div class="bar"></div>
+                                    <div class="bar1"></div>
                                 </div>
                             </li>
                             <li data-percent="60"><span>JavaScript</span>
                                 <div class="skills-bar">
-                                    <div class="bar"></div>
+                                    <div class="bar2"></div>
                                 </div>
                             </li>
 
                             <li data-percent="40"><span>JSON</span>
                                 <div class="skills-bar">
-                                    <div class="bar"></div>
+                                    <div class="bar3"></div>
                                 </div>
                             </li>
                             <li data-percent="55"><span>PHP</span>
                                 <div class="skills-bar">
-                                    <div class="bar"></div>
+                                    <div class="bar4"></div>
                                 </div>
                             </li>
                             <li data-percent="40"><span>MySQL</span>
                                 <div class="skills-bar">
-                                    <div class="bar"></div>
+                                    <div class="bar5"></div>
                                 </div>
                             </li>
                         </ul>

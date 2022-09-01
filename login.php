@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include'./dbconnect.php';
+include './dbconnect.php';
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -11,9 +11,17 @@ $password = $_POST['password'];
 
     if(mysqli_num_rows($result) > 0 ){
     $row = mysqli_fetch_assoc($result);
-    $_SESSION["email"] = $email;
-    header("location: ./profile.php");
+    if($row["name"] == "admin"){
+        $_SESSION["email"] = $email;
+        header("location: ./admin.php");
+    }elseif ($row["name"] != "admin"){
+        $_SESSION["email"] = $email;
+        header("location: ./profile.php");
+    }else{
+        header("location: ./error.php");
+    }
+    
     } else{
-    echo "<h1>Login Failed...Incorrect Email or Password...!</h1>";
+        header("location: ./error.php");
     }
 ?>

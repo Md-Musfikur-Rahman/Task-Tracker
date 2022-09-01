@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php     session_start();
-    include_once'./head.php';
+    include_once './head.php';
 ?>
     <style>
-    <?php include_once'./css/style.css';
-    include_once'./css/profile.css';
+    <?php include_once './css/style.css';
+    include_once './css/profile.css';
     ?>
     </style>
 
     <body>
-        <?php include_once'./nav.php';?>
+        <?php include_once './nav.php';?>
         <main>
             <div class="center">
                 <h1>Profile</h1>
@@ -33,9 +33,10 @@
 
                 <h2>
                     <?php
-                        include'./dbconnect.php';
+                        include './dbconnect.php';
                         
                         $email = $_SESSION["email"];
+                        echo "<h2>$email</h2>";
                                                                 
                           $sql = "SELECT * FROM  user WHERE email = '$email'";
                           $result = $conn->query($sql);

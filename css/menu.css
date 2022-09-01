@@ -358,6 +358,26 @@ h3 {
   background: var(--yellow);
   box-shadow: 0 0 0 1px var(--yellow);
 }
+.resume .func .skills-prog ul li:hover .skills-bar .bar1 {
+  background: var(--yellow);
+  box-shadow: 0 0 0 1px var(--yellow);
+}
+.resume .func .skills-prog ul li:hover .skills-bar .bar2 {
+  background: var(--yellow);
+  box-shadow: 0 0 0 1px var(--yellow);
+}
+.resume .func .skills-prog ul li:hover .skills-bar .bar3 {
+  background: var(--yellow);
+  box-shadow: 0 0 0 1px var(--yellow);
+}
+.resume .func .skills-prog ul li:hover .skills-bar .bar4 {
+  background: var(--yellow);
+  box-shadow: 0 0 0 1px var(--yellow);
+}
+.resume .func .skills-prog ul li:hover .skills-bar .bar5 {
+  background: var(--yellow);
+  box-shadow: 0 0 0 1px var(--yellow);
+}
 .resume .func .skills-prog ul li span {
   display: block;
   width: 120px;
@@ -371,7 +391,53 @@ h3 {
 }
 .resume .func .skills-prog ul li .skills-bar .bar {
   position: absolute;
+  width: 95%;
   top: -1px;
+  height: 4px;
+  background: var(--orange);
+  box-shadow: 0 0 0 var(--orange);
+  border-radius: 5px;
+}
+.resume .func .skills-prog ul li .skills-bar .bar1 {
+  position: absolute;
+  width: 90%;
+  top: -1px;
+  height: 4px;
+  background: var(--orange);
+  box-shadow: 0 0 0 var(--orange);
+  border-radius: 5px;
+}
+.resume .func .skills-prog ul li .skills-bar .bar2 {
+  position: absolute;
+  top: -1px;
+  width: 60%;
+  height: 4px;
+  background: var(--orange);
+  box-shadow: 0 0 0 var(--orange);
+  border-radius: 5px;
+}
+.resume .func .skills-prog ul li .skills-bar .bar3 {
+  position: absolute;
+  top: -1px;
+  width: 40%;
+  height: 4px;
+  background: var(--orange);
+  box-shadow: 0 0 0 var(--orange);
+  border-radius: 5px;
+}
+.resume .func .skills-prog ul li .skills-bar .bar4 {
+  position: absolute;
+  top: -1px;
+  width: 55%;
+  height: 4px;
+  background: var(--orange);
+  box-shadow: 0 0 0 var(--orange);
+  border-radius: 5px;
+}
+.resume .func .skills-prog ul li .skills-bar .bar5 {
+  position: absolute;
+  top: -1px;
+  width: 45%;
   height: 4px;
   background: var(--orange);
   box-shadow: 0 0 0 var(--orange);
