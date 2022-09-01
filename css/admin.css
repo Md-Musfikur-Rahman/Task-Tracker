@@ -5,3 +5,12 @@ h1 {
 h2 {
   text-align: center;
 }
+
+#profile .active-btn {
+  background-color: #5c45c2;
+  transition: all 0.4s ease-in-out;
+}
+
+#profile .active-btn i {
+  color: #ffffff;
+}

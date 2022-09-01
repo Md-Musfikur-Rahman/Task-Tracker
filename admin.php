@@ -12,6 +12,9 @@ include_once './head.php';
     </style>
 
     <body>
+        <?php
+        include_once './admin_nav.php';
+        ?>
         <h2>
             <?php
         include_once './dbconnect.php';
