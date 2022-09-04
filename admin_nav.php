@@ -17,7 +17,7 @@
         </div>
         <div id="profile">
             <div class="control tooltip active-btn">
-                <a href="./admin_profile.php"> <i class="fas fa-user"></i></a>
+                <a href="./admin.php"> <i class="fas fa-user"></i></a>
                 <span class="tooltiptext">Profile</span>
             </div>
         </div>

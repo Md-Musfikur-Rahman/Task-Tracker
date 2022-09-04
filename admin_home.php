@@ -7,7 +7,7 @@ include_once './head.php';
 
     <style>
     <?php include_once './css/style.css';
-    include_once './css/admin.css';
+    include_once './css/admin_home.css';
     ?>
     </style>
 
@@ -15,16 +15,7 @@ include_once './head.php';
         <?php
         include_once './admin_nav.php';
         ?>
-        <h1>Admin Profile</h1>
-        <h2>
-            <?php
-        include_once './dbconnect.php';
-        $email = $_SESSION["email"];
-        
-        echo $email;
-
-        ?>
-        </h2>
+        <h1>Home</h1>
 
         <main>
 

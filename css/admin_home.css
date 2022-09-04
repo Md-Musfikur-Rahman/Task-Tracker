@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#home .active-btn {
+  background-color: #5c45c2;
+  transition: all 0.4s ease-in-out;
+}
+
+#home .active-btn i {
+  color: #ffffff;
+}
