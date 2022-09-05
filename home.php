@@ -10,7 +10,12 @@
 
     <body>
         <?php include_once'./nav.php';?>
-        <h1>Home</h1>
+        <div class="topClock">
+            <h1>Home</h1>
+            <?php
+            include_once './clock.php';
+            ?>
+        </div>
         <main>
 
             <div class="star">

@@ -15,3 +15,9 @@ body {
 main {
   margin-bottom: 50px;
 }
+
+.topClock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

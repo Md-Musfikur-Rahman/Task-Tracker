@@ -1,5 +1,5 @@
 <style>
-<?php include_once'./css/footer.css';
+<?php include_once './css/footer.css';
 ?>
 </style>
 <footer>
