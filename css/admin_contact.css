@@ -47,11 +47,6 @@ input[type="button"]:hover {
   color: #000;
 }
 
-.edit {
-  background-color: #04aa6d;
-  margin-right: 8px;
-}
-
 .dele {
   background-color: red;
 }

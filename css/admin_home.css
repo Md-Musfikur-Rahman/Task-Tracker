@@ -16,13 +16,12 @@ main {
   margin: 64px auto;
 }
 
-.card {
-  background-color: teal;
+#card {
   width: 100%;
   padding: 12px;
 }
 
-.card i {
+#card i {
   font-size: 32px;
   margin-top: 16px;
 }
@@ -80,4 +79,41 @@ ul li {
 
 .admins:hover {
   border: 1px solid orange;
+}
+
+.btn {
+  background-color: #ddd;
+  width: fit-content;
+  padding: 8px 16px;
+  margin: 32px auto;
+  border-radius: 8px;
+}
+
+#data {
+  margin: 32px auto;
+  display: none;
+  width: 80%;
+}
+
+table {
+  margin: 24px auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+th {
+  background-color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: #9eb0b5;
+}
+
+tr:hover {
+  background-color: powderblue;
+}
+
+th,
+td {
+  padding: 16px;
+  border-right: 1px solid black;
 }

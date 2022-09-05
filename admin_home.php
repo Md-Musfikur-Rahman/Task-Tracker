@@ -18,7 +18,7 @@ include_once './head.php';
         <h1>Home</h1>
 
         <main>
-            <div class="card">
+            <div id="card">
                 <ul>
                     <li>
                         <h2>User Counts</h2>
@@ -89,10 +89,65 @@ include_once './head.php';
 
                     </li>
                 </ul>
+                <h1 class="btn" onclick="on()">User Details</h1>
+            </div>
+
+            <div id="data">
+                <h1 class="btn" onclick="off()">Back</h1>
+                <table>
+                    <tr>
+                        <th>User Name</th>
+                        <th>E-mail</th>
+                        <th>Total Tasks</th>
+                    </tr>
+                    <?php
+                include_once './dbconnect.php';
+
+            $sql = "SELECT * FROM  user ";
+            $result = $conn->query($sql);                
+                while($rows=$result->fetch_assoc())
+                {
+            ?>
+                    <tr>
+
+                        <td><?php echo $rows['name'];?></td>
+                        <td><?php echo $rows['email'];
+                        $mail = $rows['email']; ?></td>
+                        <td>
+                            <?php
+                                include_once './dbconnect.php';
+
+                                $sql = 'SELECT COUNT(email) AS Users FROM task WHERE email="$mail"';
+                                $res = $conn->query($sql);
+                                
+                                $row = $res->fetch_assoc();
+                                echo $row["Users"];
+                                ?>
+                        </td>
+                    </tr>
+                    <?php
+                }
+            ?>
+                </table>
             </div>
         </main>
 
+        <?php
+        include_once './footer.php';
+        ?>
+        <script>
+        function off() {
+            document.getElementById("card").style.display = "block";
+            document.getElementById("data").style.display = "none";
 
+        }
+
+        function on() {
+            document.getElementById("card").style.display = "none";
+            document.getElementById("data").style.display = "block";
+
+        }
+        </script>
     </body>
 
 </html>
