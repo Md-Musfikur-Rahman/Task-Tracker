@@ -103,7 +103,7 @@ include_once './head.php';
                     <?php
                 include_once './dbconnect.php';
 
-            $sql = "SELECT * FROM  user ";
+            $sql = "SELECT user.name,user.email, Count(task.email) AS num FROM user LEFT join task on user.email = task.email GROUP BY task.email";
             $result = $conn->query($sql);                
                 while($rows=$result->fetch_assoc())
                 {
@@ -111,19 +111,8 @@ include_once './head.php';
                     <tr>
 
                         <td><?php echo $rows['name'];?></td>
-                        <td><?php echo $rows['email'];
-                        $mail = $rows['email']; ?></td>
-                        <td>
-                            <?php
-                                include_once './dbconnect.php';
-
-                                $sql = 'SELECT COUNT(email) AS Users FROM task WHERE email="$mail"';
-                                $res = $conn->query($sql);
-                                
-                                $row = $res->fetch_assoc();
-                                echo $row["Users"];
-                                ?>
-                        </td>
+                        <td><?php echo $rows['email'];?></td>
+                        <td><?php echo $rows['num'];?></td>
                     </tr>
                     <?php
                 }
