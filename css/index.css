@@ -11,13 +11,8 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
+  height: 90vh;
   margin: -20px 0 50px;
-}
-
-h1 {
-  font-weight: bold;
-  margin: 0;
 }
 
 h2 {
@@ -32,7 +27,7 @@ p {
   margin: 20px 0 30px;
 }
 
-span {
+#span {
   font-size: 12px;
 }
 
@@ -224,4 +219,11 @@ input {
   margin: 0 5px;
   height: 40px;
   width: 40px;
+}
+
+.typewrite {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+  color: black;
 }

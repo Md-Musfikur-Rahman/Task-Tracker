@@ -83,7 +83,6 @@ h3 {
   background: var(--darkest-blue);
   color: var(--white);
   margin: 20px auto;
-  box-shadow: 10px 10px var(--black);
   position: relative;
   display: flex;
 }

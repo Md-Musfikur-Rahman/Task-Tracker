@@ -1,5 +1,11 @@
-body {
+h1 {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  padding: 16px;
 }
 
 #home .active-btn {
@@ -16,9 +22,15 @@ body {
   font-size: 18px;
 }
 
-.star p {
+main {
+  width: 80%;
+  margin: 32px auto 72px;
+}
+
+.star {
   margin-bottom: 50px;
   font-size: 24px;
+  color: black;
   font-family: "Dancing Script", cursive;
 }
 
@@ -118,9 +130,9 @@ body {
 }
 
 .testimonial-text {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 25px;
-  text-align: center;
+  text-align: justify;
   padding: 25px 15px;
   width: 100%;
 }
@@ -142,10 +154,6 @@ body {
   margin: 0 20px;
   display: grid;
   grid-template-rows: 1fr 1fr;
-}
-
-.user-name {
-  font-weight: 800;
 }
 
 .user-job-details {
@@ -177,4 +185,17 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.tsk h2 {
+  margin: 16px auto;
+  text-align: left;
+}
+
+.tsk {
+  width: 50%;
+  margin: 16px auto;
+  font-size: 24px;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
 }

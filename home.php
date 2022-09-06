@@ -11,7 +11,11 @@
     <body>
         <?php include_once'./nav.php';?>
         <div class="topClock">
-            <h1>Home</h1>
+            <h1>
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome", "Task Tracker", "Home"]'>
+                    <span class="wrap"></span>
+                </a>
+            </h1>
             <?php
             include_once './clock.php';
             ?>
@@ -22,6 +26,17 @@
                 <p>Those who plan do better than those who do not plan <br>
                     use our service and plan your succes today!!
                 </p>
+                <div class="tsk">
+                    <h2>What is Task Tracker</h2>
+                    <p>
+                        A task tracker helps you make sure no tasks slip through the cracks with everything you have to
+                        do
+                        in a day. And it's not just for personal task tracking. You can manage your team members' tasks
+                        too.
+                        If you choose a task tracker within a task management tool, you'll get data on the tasks you and
+                        your team complete.
+                    </p>
+                </div>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -46,9 +61,9 @@
                                 <div class="user-info">
                                     <span class="user-name">Joy Gumz</span>
                                     <div class="user-job-details">
-                                        <span class="user-job">Content Writer</span>
+                                        <span class="user-job">Writer</span>
                                         <div class="line"></div>
-                                        <span class="user-post">Project Management Institute</span>
+                                        <span class="user-post">Project Managemer</span>
                                     </div>
                                 </div>
                             </div>
@@ -192,10 +207,7 @@
                         <div class="testimonial">
                             <i class="fas fa-quote-right"></i>
                             <span class="testimonial-text">If your actions inspire others to dream more, learn more, do
-                                more
-                                and
-                                become
-                                more, you are a leader.</span>
+                                more and become more, you are a leader.</span>
                             <div class="testimonial-user">
                                 <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="user-img"
                                     class="user-img">
@@ -249,6 +261,66 @@
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 4000);
         }
+
+
+        var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
         </script>
 
 

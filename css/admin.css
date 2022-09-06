@@ -2,6 +2,10 @@ h1 {
   text-align: center;
 }
 
+h1 a {
+  color: #333;
+}
+
 h2 {
   text-align: center;
 }
